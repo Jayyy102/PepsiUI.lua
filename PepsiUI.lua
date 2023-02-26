@@ -2,30 +2,30 @@ local library = loadstring(game:GetObjects("rbxassetid://7657867786")[1].Source)
 local Wait = library.subs.Wait -- Only returns if the GUI has not been terminated. For 'while Wait() do' loops
 
 local PepsisWorld = library:CreateWindow({
-Name = "Pepsi's World",
+Name = "PurpleWare Beta 0.1",
 Themeable = {
-Info = "Discord Server: VzYTJ7Y"
+Info = "Discord Server: bTP5FqWEBn"
 }
 })
 
 local GeneralTab = PepsisWorld:CreateTab({
-Name = "General"
+Name = "Combat"
 })
 local FarmingSection = GeneralTab:CreateSection({
-Name = "Farming"
+Name = "AimAssist"
 })
 FarmingSection:AddToggle({
-Name = "EXP Grinder",
+Name = "AutoClicker",
 Flag = "FarmingSection_EXPGrinder"
 })
 FarmingSection:AddToggle({
-Name = "Trick Spammer",
+Name = "Reach",
 Flag = "FarmingSection_TrickSpammer",
 Keybind = 1,
 Callback = print
 })
 FarmingSection:AddSlider({
-Name = "Trick Rate",
+Name = "Sprint",
 Flag = "FarmingSection_TrickRate",
 Value = 0.15,
 Precise = 2,
@@ -33,7 +33,7 @@ Min = 0,
 Max = 1
 })
 FarmingSection:AddToggle({
-Name = "TP To Coins",
+Name = "",
 Flag = "FarmingSection_TPCoins"
 })
 FarmingSection:AddToggle({
